@@ -1,0 +1,18 @@
+body {
+    margin: 4em;
+    font-family: 'Lato', sans-serif;
+}
+
+.bio-container {
+    display: flex;
+    max-width: 95%;
+}
+
+.bio-image {
+    width: 20%;
+}
+
+.bio-image > img {
+    max-width: 300px;
+    width: 200px;
+}
