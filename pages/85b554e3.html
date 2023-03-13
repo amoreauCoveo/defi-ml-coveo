@@ -10,10 +10,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/style.css">
+    <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
+    <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
+    <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
+    <script>
+      (async () => {
+        await customElements.whenDefined('atomic-search-interface');
+        const searchInterface = document.querySelector(
+          'atomic-search-interface'
+        );
+  
+        // Initialization
+        await searchInterface.initialize({
+          accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
+          organizationId: 'amoreaudefiml8gdiadbr',
+        });
+  
+        // Trigger a first search
+        //searchInterface.executeFirstSearch();
+      })();
+    </script>
 </head>
 
 <body>
-    <h1></h1>
+    <atomic-search-interface search-hub="search">
+        <atomic-search-box redirection-url="https://defi-ml-coveo.vercel.app/search.html">
+        </atomic-search-box>
+      </atomic-search-interface>
+    <h1>Deep Blue</h1>
     <div class="bio-container">
         <div class="bio-text">
             <span>

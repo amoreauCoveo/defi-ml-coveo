@@ -10,6 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/style.css">
+    <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
+    <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
+    <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
+    <script>
+      (async () => {
+        await customElements.whenDefined('atomic-search-interface');
+        const searchInterface = document.querySelector(
+          'atomic-search-interface'
+        );
+  
+        // Initialization
+        await searchInterface.initialize({
+          accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
+          organizationId: 'amoreaudefiml8gdiadbr',
+        });
+  
+        // Trigger a first search
+        searchInterface.executeFirstSearch();
+      })();
+    </script>
 </head>
 
 <body>
@@ -30,6 +50,10 @@
             <p>Vous avez atteint la fin du défi! Merci pour votre participation!</p>
         </div>
     </div>
+    <atomic-search-interface search-hub="search" pipeline="finale">
+        <atomic-search-box></atomic-search-box>
+        <atomic-result-list></atomic-result-list>
+      </atomic-search-interface>
 </body>
 
 </html>
