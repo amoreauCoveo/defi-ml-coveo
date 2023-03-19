@@ -16,3 +16,7 @@ body {
     max-width: 300px;
     width: 200px;
 }
+
+atomic-result-list::part(outline) {
+    padding: 5px;
+}
