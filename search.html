@@ -26,6 +26,13 @@
         organizationId: 'amoreaudefiml8gdiadbr',
       });
 
+      const {engine} = searchInterface;
+      const searchbox = document.querySelector('atomic-search-box');
+
+      engine.subscribe(() => {
+        const queryIsEmpty = searchbox.shadowRoot.querySelector('input')?.value === '';
+        searchbox.setAttribute('disable-search', queryIsEmpty);
+      })
       searchInterface.analytics = false;
       searchInterface.executeFirstSearch();
     })();
@@ -38,7 +45,13 @@
   <p>Pour débuter, veuillez chercher dans la barre de recherche suivante.</p>
   <atomic-search-interface search-hub="search" pipeline="puzzle" reflect-state-in-url="false">
     <atomic-search-box></atomic-search-box>
-    <atomic-result-list></atomic-result-list>
+    <atomic-result-list>
+      <atomic-result-template>
+        <template>
+          <atomic-result-link></atomic-result-link>
+        </template>
+      </atomic-result-template>
+    </atomic-result-list>
   </atomic-search-interface>
 </body>
 
