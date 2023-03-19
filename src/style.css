@@ -19,3 +19,7 @@ body {
 atomic-result-list::part(outline) {
     padding: 5px;
 }
+
+img {
+    max-width: 100%;
+}
