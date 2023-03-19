@@ -2,63 +2,67 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Réseau de neuronnes artificiels</title>
-    <meta name="description" content="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../src/style.css">
-    <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
-    <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
-    <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
-    <script>
-      (async () => {
-        await customElements.whenDefined('atomic-search-interface');
-        const searchInterface = document.querySelector(
-          'atomic-search-interface'
-        );
-  
-        // Initialization
-        await searchInterface.initialize({
-          accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
-          organizationId: 'amoreaudefiml8gdiadbr',
-        });
-  
-        // Trigger a first search
-        //searchInterface.executeFirstSearch();
-      })();
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réseau de neuronnes artificiels</title>
+  <meta name="description" content="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/style.css">
+  <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
+  <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
+  <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
+  <script>
+    (async () => {
+      await customElements.whenDefined('atomic-search-interface');
+      const searchInterface = document.querySelector(
+        'atomic-search-interface'
+      );
+
+      // Initialization
+      await searchInterface.initialize({
+        accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
+        organizationId: 'amoreaudefiml8gdiadbr',
+      });
+
+      // Trigger a first search
+      //searchInterface.executeFirstSearch();
+    })();
+  </script>
 </head>
 
 <body>
-    <atomic-search-interface search-hub="search">
-        <atomic-search-box redirection-url="https://defi-ml-coveo.vercel.app/search.html">
-        </atomic-search-box>
-      </atomic-search-interface>
-    <h1>Réseau de neuronnes artificiels</h1>
-    <div class="bio-container">
-        <div class="bio-text">
-            <span>
-                <p>Un réseau de neurones artificiels est un système qui, schématiquement, s’apparente au fonctionnement des neurones biologiques. Ce type de réseau permet au logiciel d’apprendre de ses erreurs, et permet le traitement de données complexes pour régler des problèmes compliqués.</p>
-                <p>Plusieurs systèmes utilisent un réseau de neurones artificiels, tel l’imagerie médicale, les prédictions financières ou l’identification de composants chimiques.</p>
-            </span>
-        </div>
-        <div class="bio-image">
-          <img src="../src/img/neural-network.png"></img>
+  <atomic-search-interface search-hub="search">
+    <atomic-search-box redirection-url="https://defi-ml-coveo.vercel.app/search.html">
+    </atomic-search-box>
+  </atomic-search-interface>
+  <h1>Réseau de neuronnes artificiels</h1>
+  <div class="bio-container">
+    <div class="bio-image">
+      <img src="../src/img/neural-network.png"></img>
+    </div>
+    <div class="bio-text">
+      <span>
+        <p>Un réseau de neurones artificiels est un système qui, schématiquement, s’apparente au fonctionnement des
+          neurones biologiques. Ce type de réseau permet au logiciel d’apprendre de ses erreurs, et permet le traitement
+          de données complexes pour régler des problèmes compliqués.</p>
+        <p>Plusieurs systèmes utilisent un réseau de neurones artificiels, tel l’imagerie médicale, les prédictions
+          financières ou l’identification de composants chimiques.</p>
+      </span>
+    </div>
+  </div>
+  <div class="puzzle-container">
+    <div class="puzzle-text">
+      <p>Le réseau de neuronnes étant une machine, il vous laisse l’énigme suivante :</p>
+      <p>Quel est le mot caché à l'intérieur de cette suite de chiffres?</p>
+      <div class="puzzle">
+        <p>01001 01101 00001 00111 00101</p>
       </div>
+      <p>Une fois déchiffrée, l’énigme devrait vous donner un mot. Cherchez ce mot dans la barre de recherche pour
+        atteindre l’énigme suivante.</p>
     </div>
-    <div class="puzzle-container">
-        <div class="puzzle-text">
-            <p>Le réseau de neuronnes étant une machine, il vous laisse l’énigme suivante :</p>
-            <p>Quel est le mot caché à l'intérieur de cette suite de chiffres?</p>
-            <div class="puzzle">
-                <p>01001 01101 00001 00111 00101</p>
-            </div>
-            <p>Une fois déchiffrée, l’énigme devrait vous donner un mot. Cherchez ce mot dans la barre de recherche pour atteindre l’énigme suivante.</p>
-        </div>
-    </div>
+  </div>
 </body>
 
 </html>

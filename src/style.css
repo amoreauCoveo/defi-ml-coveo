@@ -4,7 +4,6 @@ body {
 }
 
 .bio-container {
-    display: flex;
     max-width: 95%;
 }
 

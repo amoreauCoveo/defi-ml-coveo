@@ -2,64 +2,67 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Apprentissage Profond</title>
-    <meta name="description" content="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../src/style.css">
-    <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
-    <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
-    <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
-    <script>
-      (async () => {
-        await customElements.whenDefined('atomic-search-interface');
-        const searchInterface = document.querySelector(
-          'atomic-search-interface'
-        );
-  
-        // Initialization
-        await searchInterface.initialize({
-          accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
-          organizationId: 'amoreaudefiml8gdiadbr',
-        });
-  
-        // Trigger a first search
-        //searchInterface.executeFirstSearch();
-      })();
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apprentissage Profond</title>
+  <meta name="description" content="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/style.css">
+  <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
+  <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
+  <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
+  <script>
+    (async () => {
+      await customElements.whenDefined('atomic-search-interface');
+      const searchInterface = document.querySelector(
+        'atomic-search-interface'
+      );
+
+      // Initialization
+      await searchInterface.initialize({
+        accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
+        organizationId: 'amoreaudefiml8gdiadbr',
+      });
+
+      // Trigger a first search
+      //searchInterface.executeFirstSearch();
+    })();
+  </script>
 </head>
 
 <body>
-    <atomic-search-interface search-hub="search">
-        <atomic-search-box redirection-url="https://defi-ml-coveo.vercel.app/search.html">
-        </atomic-search-box>
-      </atomic-search-interface>
-    <h1>Apprentissage Profond</h1>
-    <div class="bio-container">
-        <div class="bio-text">
-            <span>
-                <p>L’apprentissage profond est un type d’apprentissage par machine qui utilise entre autres des réseaux de neurones artificiels et du « Big Data » pour créer des réseaux complexes souvent utilisés pour comprendre des abstractions comme des images, du texte ou du son.</p>
-                <p>Un modèle est considéré profond lorsqu’il utilise plusieurs couches de réseaux de neurones.</p>
-                <p>Ce sont les modèles à apprentissage profond qui sont utilisés pour la reconnaissance de visages ou de la voix, et qui sont capables de générer du texte ou des images.</p>
-            </span>
-        </div>
-        <div class="bio-image">
-          <img src="../src/img/deep-learning.png"></img>
-      </div>
+  <atomic-search-interface search-hub="search">
+    <atomic-search-box redirection-url="https://defi-ml-coveo.vercel.app/search.html">
+    </atomic-search-box>
+  </atomic-search-interface>
+  <h1>Apprentissage Profond</h1>
+  <div class="bio-container">
+    <div class="bio-image">
+      <img src="../src/img/deep-learning.png"></img>
     </div>
-    <div class="puzzle-container">
-        <div class="puzzle-text">
-            <p>Les modèles d’apprentissage profond sont adeptes des images. Ils vous laissent donc ce rebus suivant : </p>
-            <img src="../src/img/rebus-puzzle-1.png"></img>
-            <img src="../src/img/rebus-puzzle-2.png"></img>
-            <img src="../src/img/rebus-puzzle-3.png"></img>
-            <img src="../src/img/rebus-puzzle-4.png"></img>
-            <p>Une fois résolu, entrez la réponse dans la barre de recherche, et accèdez à la dernière page du défi.</p>
-        </div>
+    <div class="bio-text">
+      <span>
+        <p>L’apprentissage profond est un type d’apprentissage par machine qui utilise entre autres des réseaux de
+          neurones artificiels et du « Big Data » pour créer des réseaux complexes souvent utilisés pour comprendre des
+          abstractions comme des images, du texte ou du son.</p>
+        <p>Un modèle est considéré profond lorsqu’il utilise plusieurs couches de réseaux de neurones.</p>
+        <p>Ce sont les modèles à apprentissage profond qui sont utilisés pour la reconnaissance de visages ou de la
+          voix, et qui sont capables de générer du texte ou des images.</p>
+      </span>
     </div>
+  </div>
+  <div class="puzzle-container">
+    <div class="puzzle-text">
+      <p>Les modèles d’apprentissage profond sont adeptes des images. Ils vous laissent donc ce rebus suivant : </p>
+      <img src="../src/img/rebus-puzzle-1.png"></img>
+      <img src="../src/img/rebus-puzzle-2.png"></img>
+      <img src="../src/img/rebus-puzzle-3.png"></img>
+      <img src="../src/img/rebus-puzzle-4.png"></img>
+      <p>Une fois résolu, entrez la réponse dans la barre de recherche, et accèdez à la dernière page du défi.</p>
+    </div>
+  </div>
 </body>
 
 </html>

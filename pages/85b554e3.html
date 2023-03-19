@@ -14,21 +14,21 @@
     <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
     <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
     <script>
-      (async () => {
-        await customElements.whenDefined('atomic-search-interface');
-        const searchInterface = document.querySelector(
-          'atomic-search-interface'
-        );
-  
-        // Initialization
-        await searchInterface.initialize({
-          accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
-          organizationId: 'amoreaudefiml8gdiadbr',
-        });
-  
-        // Trigger a first search
-        //searchInterface.executeFirstSearch();
-      })();
+        (async () => {
+            await customElements.whenDefined('atomic-search-interface');
+            const searchInterface = document.querySelector(
+                'atomic-search-interface'
+            );
+
+            // Initialization
+            await searchInterface.initialize({
+                accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
+                organizationId: 'amoreaudefiml8gdiadbr',
+            });
+
+            // Trigger a first search
+            //searchInterface.executeFirstSearch();
+        })();
     </script>
 </head>
 
@@ -36,24 +36,30 @@
     <atomic-search-interface search-hub="search">
         <atomic-search-box redirection-url="https://defi-ml-coveo.vercel.app/search.html">
         </atomic-search-box>
-      </atomic-search-interface>
+    </atomic-search-interface>
     <h1>Deep Blue</h1>
     <div class="bio-container">
-        <div class="bio-text">
-            <span>
-                <p>En 1996, le superordinateur Deep Blue, créé par la compagnie IBM, réussi à battre le champion du monde d’échecs, Gary Kasparov, à son propre jeu. Ce fut la première fois qu’un ordinateur battait le champion du monde d’échecs aux échecs.</p>
-                <p>Depuis, plusieurs algorithme utilisant des modèles d’intelligence artificielle tel le réseau de neuronnes artificiels ou l'apprentissage profond ont de loin supplanté Deep Blue.</p>
-            </span>
-        </div>
         <div class="bio-image">
             <img src="../src/img/deepblue.jpg"></img>
+        </div>
+        <div class="bio-text">
+            <span>
+                <p>En 1996, le superordinateur Deep Blue, créé par la compagnie IBM, réussi à battre le champion du
+                    monde d’échecs, Gary Kasparov, à son propre jeu. Ce fut la première fois qu’un ordinateur battait le
+                    champion du monde d’échecs aux échecs.</p>
+                <p>Depuis, plusieurs algorithme utilisant des modèles d’intelligence artificielle tel le réseau de
+                    neuronnes artificiels ou l'apprentissage profond ont de loin supplanté Deep Blue.</p>
+            </span>
         </div>
     </div>
     <div class="puzzle-container">
         <div class="puzzle-text">
             <p>En tant que champion d’échecs, Deep Blue vous laisse l’énigme suivante :</p>
-            <p>Aux échecs, les cavaliers doivent bouger en forme de «L», c’est-à-dire deux cases dans une direction, et une case perpendiculaire à cette direction.</p>
-            <p>Étant donné la grille suivante, en assumant que le cavalier ne peut pas capturer ou occuper la même case que les autres pièces présentes, quel est la seule case que le cavalier ne peut pas visiter en 3 coups et moins?</p>
+            <p>Aux échecs, les cavaliers doivent bouger en forme de «L», c’est-à-dire deux cases dans une direction, et
+                une case perpendiculaire à cette direction.</p>
+            <p>Étant donné la grille suivante, en assumant que le cavalier ne peut pas capturer ou occuper la même case
+                que les autres pièces présentes, quel est la seule case que le cavalier ne peut pas visiter en 3 coups
+                et moins?</p>
             <img src="../src/img/chess-puzzle.png"></img>
             <p>Utilisez le tableau suivant pour trouver le mot à chercher dans la barre de recherche :</p>
             <table>

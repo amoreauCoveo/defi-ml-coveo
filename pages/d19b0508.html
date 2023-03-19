@@ -2,72 +2,74 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coveo</title>
-    <meta name="description" content="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../src/style.css">
-    <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
-    <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
-    <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
-    <script>
-      (async () => {
-        await customElements.whenDefined('atomic-search-interface');
-        const searchInterface = document.querySelector(
-          'atomic-search-interface'
-        );
-  
-        // Initialization
-        await searchInterface.initialize({
-          accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
-          organizationId: 'amoreaudefiml8gdiadbr',
-        });
-  
-        searchInterface.language = 'fr';
-        searchInterface.executeFirstSearch();
-      })();
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coveo</title>
+  <meta name="description" content="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/style.css">
+  <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
+  <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
+  <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
+  <script>
+    (async () => {
+      await customElements.whenDefined('atomic-search-interface');
+      const searchInterface = document.querySelector(
+        'atomic-search-interface'
+      );
+
+      // Initialization
+      await searchInterface.initialize({
+        accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
+        organizationId: 'amoreaudefiml8gdiadbr',
+      });
+
+      searchInterface.language = 'fr';
+      searchInterface.executeFirstSearch();
+    })();
+  </script>
 </head>
 
 <body>
-    <h1>Coveo</h1>
-    <div class="bio-container">
-        <div class="bio-text">
-            <span>
-                <p>Coveo est une compagnie de recherche par intelligence artificielle basé à Québec, avec des bureaux à Montréal, Londres et aux Pays-Bas.</p>
-                <p>La plateforme Coveo permet aux entreprises de donner une meilleure expérience numérique à leurs utilisateurs en comprenant les habitudes des utilisateurs pour prévoir ce dont ils vont avoir besoin.</p>
-            </span>
-        </div>
-        <div class="bio-image">
-            <img src="../src/img/coveo.png"></img>
-        </div>
+  <h1>Coveo</h1>
+  <div class="bio-container">
+    <div class="bio-image">
+      <img src="../src/img/coveo.png"></img>
     </div>
-    <div class="puzzle-container">
-        <div class="puzzle-text">
-            <p>Vous avez atteint la fin du défi! Merci pour votre participation!</p>
-        </div>
+    <div class="bio-text">
+      <span>
+        <p>Coveo est une compagnie de recherche par intelligence artificielle basé à Québec, avec des bureaux à
+          Montréal, Londres et aux Pays-Bas.</p>
+        <p>La plateforme Coveo permet aux entreprises de donner une meilleure expérience numérique à leurs utilisateurs
+          en comprenant les habitudes des utilisateurs pour prévoir ce dont ils vont avoir besoin.</p>
+      </span>
     </div>
-    <atomic-search-interface search-hub="search" pipeline="finale" fields-to-include='["image"]'>
-        <atomic-search-box></atomic-search-box>
-        <atomic-result-list image-size="small">
-          <atomic-result-template>
-            <template>
-                <atomic-result-section-visual>
-                  <atomic-result-image field="image"></atomic-result-image>
-                </atomic-result-section-visual>
-                <atomic-result-section-title>
-                  <atomic-result-link></atomic-result-link>
-                </atomic-result-section-title>
-                <atomic-result-section-excerpt>
-                  <atomic-result-text field="excerpt"></atomic-result-text>
-                </atomic-result-section-excerpt>
-            </template>
-          </atomic-result-template>
-        </atomic-result-list>
-      </atomic-search-interface>
+  </div>
+  <div class="puzzle-container">
+    <div class="puzzle-text">
+      <p>Vous avez atteint la fin du défi! Merci pour votre participation!</p>
+    </div>
+  </div>
+  <atomic-search-interface search-hub="search" pipeline="finale" fields-to-include='["image"]'>
+    <atomic-search-box></atomic-search-box>
+    <atomic-result-list image-size="small">
+      <atomic-result-template>
+        <template>
+          <atomic-result-section-visual>
+            <atomic-result-image field="image"></atomic-result-image>
+          </atomic-result-section-visual>
+          <atomic-result-section-title>
+            <atomic-result-link></atomic-result-link>
+          </atomic-result-section-title>
+          <atomic-result-section-excerpt>
+            <atomic-result-text field="excerpt"></atomic-result-text>
+          </atomic-result-section-excerpt>
+        </template>
+      </atomic-result-template>
+    </atomic-result-list>
+  </atomic-search-interface>
 </body>
 
 </html>

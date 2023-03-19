@@ -2,63 +2,68 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alan Turing</title>
-    <meta name="description" content="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../src/style.css">
-    <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
-    <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
-    <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
-    <script>
-      (async () => {
-        await customElements.whenDefined('atomic-search-interface');
-        const searchInterface = document.querySelector(
-          'atomic-search-interface'
-        );
-  
-        // Initialization
-        await searchInterface.initialize({
-          accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
-          organizationId: 'amoreaudefiml8gdiadbr',
-        });
-  
-        // Trigger a first search
-        //searchInterface.executeFirstSearch();
-      })();
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Turing</title>
+  <meta name="description" content="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/style.css">
+  <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>
+  <script nomodule src="https://static.cloud.coveo.com/atomic/v2/atomic.js"></script>
+  <link rel="stylesheet" href="https://static.cloud.coveo.com/atomic/v2/themes/coveo.css" />
+  <script>
+    (async () => {
+      await customElements.whenDefined('atomic-search-interface');
+      const searchInterface = document.querySelector(
+        'atomic-search-interface'
+      );
+
+      // Initialization
+      await searchInterface.initialize({
+        accessToken: 'xxb46f8bdb-add0-4a99-bff7-b42641795fad',
+        organizationId: 'amoreaudefiml8gdiadbr',
+      });
+
+      // Trigger a first search
+      //searchInterface.executeFirstSearch();
+    })();
+  </script>
 </head>
 
 <body>
-    <atomic-search-interface search-hub="search">
-        <atomic-search-box redirection-url="https://defi-ml-coveo.vercel.app/search.html">
-        </atomic-search-box>
-      </atomic-search-interface>
-    <h1>Alan Turing</h1>
-    <div class="bio-container">
-        <div class="bio-text">
-            <span>
-                <p>Alan Turing est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l’informatique.</p>
-                <p>Durant la Seconde Guerre mondiale, il joue un rôle majeur dans la cryptanalyse de la machine Enigma utilisée par les armées allemandes, en utilisant la machine de Turing, une version primitive d’un ordinateur moderne.</p>
-                <p>Après la guerre, il travaille sur un des tout premiers ordinateurs, puis contribue au débat sur la possibilité de l’intelligence artificielle, en proposant le test de Turing.</p>
-            </span>
-        </div>
-        <div class="bio-image">
-            <img src="../src/img/alan-turing.png"></img>
-        </div>
+  <atomic-search-interface search-hub="search">
+    <atomic-search-box redirection-url="https://defi-ml-coveo.vercel.app/search.html">
+    </atomic-search-box>
+  </atomic-search-interface>
+  <h1>Alan Turing</h1>
+  <div class="bio-container">
+    <div class="bio-image">
+      <img src="../src/img/alan-turing.png"></img>
     </div>
-    <div class="puzzle-container">
-        <div class="puzzle-text">
-            <p>En tant que cryptologue, Alan vous laisse l’énigne suivante :</p>
-            <img src="../src/img/turing-clock-1.png"></img>
-            <img src="../src/img/turing-clock-2.png"></img>
-            <img src="../src/img/turing-clock-3.png"></img>
-            <p>Une fois déchiffrée, l’énigme devrait vous donner un mot. Cherchez ce mot dans la barre de recherche pour atteindre l’énigme suivante.</p>
-        </div>
+    <div class="bio-text">
+      <span>
+        <p>Alan Turing est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement
+          l’informatique.</p>
+        <p>Durant la Seconde Guerre mondiale, il joue un rôle majeur dans la cryptanalyse de la machine Enigma utilisée
+          par les armées allemandes, en utilisant la machine de Turing, une version primitive d’un ordinateur moderne.
+        </p>
+        <p>Après la guerre, il travaille sur un des tout premiers ordinateurs, puis contribue au débat sur la
+          possibilité de l’intelligence artificielle, en proposant le test de Turing.</p>
+      </span>
     </div>
+  </div>
+  <div class="puzzle-container">
+    <div class="puzzle-text">
+      <p>En tant que cryptologue, Alan vous laisse l’énigne suivante :</p>
+      <img src="../src/img/turing-clock-1.png"></img>
+      <img src="../src/img/turing-clock-2.png"></img>
+      <img src="../src/img/turing-clock-3.png"></img>
+      <p>Une fois déchiffrée, l’énigme devrait vous donner un mot. Cherchez ce mot dans la barre de recherche pour
+        atteindre l’énigme suivante.</p>
+    </div>
+  </div>
 </body>
 
 </html>
