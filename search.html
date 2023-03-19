@@ -33,7 +33,7 @@
         const queryIsEmpty = searchbox.shadowRoot.querySelector('input')?.value === '';
         searchbox.setAttribute('disable-search', queryIsEmpty);
       })
-      //searchInterface.analytics = false;
+      searchInterface.analytics = false;
       searchInterface.language = 'fr';
       searchInterface.executeFirstSearch();
     })();
