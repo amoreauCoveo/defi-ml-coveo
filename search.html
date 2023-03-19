@@ -26,7 +26,7 @@
         organizationId: 'amoreaudefiml8gdiadbr',
       });
 
-      const {engine} = searchInterface;
+      const { engine } = searchInterface;
       const searchbox = document.querySelector('atomic-search-box');
 
       engine.subscribe(() => {
@@ -43,12 +43,18 @@
   <h1>Introduction à l'histoire de l'intelligence artificielle</h1>
   <p>Bienvenue au défi Coveo sur l'intelligence articielle!</p>
   <p>Pour débuter, veuillez chercher dans la barre de recherche suivante.</p>
-  <atomic-search-interface search-hub="search" pipeline="puzzle" reflect-state-in-url="false">
+  <atomic-search-interface search-hub="search" pipeline="puzzle" reflect-state-in-url="false"
+    fields-to-include='["image"]'>
     <atomic-search-box></atomic-search-box>
-    <atomic-result-list>
+    <atomic-result-list image-size="small">
       <atomic-result-template>
         <template>
-          <atomic-result-link></atomic-result-link>
+            <atomic-result-section-visual>
+              <atomic-result-image field="image"></atomic-result-image>
+            </atomic-result-section-visual>
+            <atomic-result-section-title>
+              <atomic-result-link></atomic-result-link>
+            </atomic-result-section-title>
         </template>
       </atomic-result-template>
     </atomic-result-list>
